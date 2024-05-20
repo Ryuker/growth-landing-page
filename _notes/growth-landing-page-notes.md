@@ -29,6 +29,7 @@ practise project using plain HTML, CSS and JavaScript
 # 3. Navbar HTML
 - Added nav element with navbar class
   - contains `logo` and `main-menu`
+  - in main menu the login button has a btn class to style it as a button
 ``` HTML index.html
 <nav class="navbar">
   <div class="container">
@@ -50,7 +51,8 @@ practise project using plain HTML, CSS and JavaScript
           <a href="#">Blog</a>
         </li>
         <li>
-          <a class="btn btn-light" href="#">Login</a>
+          <a class="btn btn-light" href="#">
+            <i class="fas fa-user"></i>Login</a>
         </li>
       </ul>
     </div>
