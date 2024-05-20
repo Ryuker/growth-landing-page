@@ -223,6 +223,50 @@ img {
 </section>
 ```
 
+# 10. Text Utility Classes
+- Added text utility classes for different sizes
+``` CSS style.css
+/* Text Classes */
+.text-xxl {
+  font-size: 3rem;  /* 1 rem = 16px */
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;  /* 1 rem = 16px */
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;  /* 1 rem = 16px */
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;  /* 1 rem = 16px */
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;  /* 1 rem = 16px */
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+```
+
 
 
 
