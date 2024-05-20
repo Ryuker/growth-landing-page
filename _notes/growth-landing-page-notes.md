@@ -104,6 +104,8 @@ img {
 
 .container-sm {
   max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 ```
 
@@ -291,6 +293,26 @@ img {
   width: 70%;
   margin-bottom: 20px;
 }
+```
+
+# 12. Video Section
+- Added HTML for video section
+``` HTML index.html
+<!-- Video Section -->
+<section class="video bg-black">
+  <div class="container-sm">
+    <h2 class="video-heading text-xl text-center">
+      See how it works and get started in less than 2 minutes
+    </h2>
+    <div class="video-content">
+      <a href="#">
+        <img class="video-preview" src="assets/images/video-preview.png" alt="video" />
+      </a>
+
+      <a href="#" class="btn btn-primary">Get Started</a>
+    </div>
+  </div>
+</section>
 ```
 
 
