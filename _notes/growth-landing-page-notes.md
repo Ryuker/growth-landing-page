@@ -10,7 +10,7 @@ practise project using plain HTML, CSS and JavaScript
 
 # 2. Base HTML and Links
 - added `index.html`
-- imported stylesheet | `<link rel="stylesheet" hre="css/style.css">`
+- imported stylesheet | `<link rel="stylesheet" href="css/style.css">`
 - imported main.js    | `<script src="js/main.js" defer></script>`
 
 ## Font - Poppins
@@ -59,3 +59,53 @@ practise project using plain HTML, CSS and JavaScript
   </div>
 </nav>
 ```
+
+# 4. Base CSS 
+- Added CSS resets
+``` CSS style.css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+```
+## links
+``` CSS
+a {
+  text-decoration: none;
+  color: #333;
+}
+```
+
+## unordered lists
+``` CSS
+ul {
+  list-style: none;
+}
+```
+
+## Image default size
+- specified max-width to be 100%, this prevent it from overflowing the div
+``` CSS
+img {
+  max-width: 100%;
+}
+```
+
+# 5. Utility CSS Classes
+
+## Container classes
+``` CSS
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 800px;
+}
+```
+
+
+
