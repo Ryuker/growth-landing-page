@@ -267,6 +267,32 @@ img {
 }
 ```
 
+# 11. Hero Classes
+- Added hero styling
+``` CSS
+/* Hero */
+/* Hero */
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container {
+  background: url('../assets/images/hero-bg.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+
+.hero .hero-content {
+  width: 70%;
+}
+
+.hero .hero-text {
+  width: 70%;
+  margin-bottom: 20px;
+}
+```
+
 
 
 
