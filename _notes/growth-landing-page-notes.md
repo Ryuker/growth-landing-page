@@ -1,6 +1,59 @@
 # Growth Landing Page notes
 practise project using plain HTML, CSS and JavaScript
 
-# 1. Setup 
+# 1. Setup
+- Made folders for `js`, `css` and `assets`
+- Added `js/mains.js`
+- Added `css/style.css`
+- Added `assest/images` and moved images into this folder
 
-# 2. 
+
+# 2. Base HTML and Links
+- added `index.html`
+- imported stylesheet | `<link rel="stylesheet" hre="css/style.css">`
+- imported main.js    | `<script src="js/main.js" defer></script>`
+
+## Font - Poppins
+- went to google fonts and got the poppins font
+- imported into the head tag
+``` HTML index.html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+```
+
+## Icons - FontAwesome
+- went to [cdnjs.com](https://cdnjs.com/)
+
+# 3. Navbar HTML
+- Added nav element with navbar class
+  - contains `logo` and `main-menu`
+``` HTML index.html
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="logo">
+      </a>
+    </div>
+
+    <div class="main-menu">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a class="btn btn-light" href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+```
