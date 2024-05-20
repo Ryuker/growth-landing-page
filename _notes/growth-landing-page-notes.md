@@ -107,5 +107,52 @@ img {
 }
 ```
 
+# 6. Navbar styling
+- added flex container inside navbar
+``` CSS
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+## Main menu styling
+``` CSS
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: #4891ff;
+}
+```
+
+## color variables
+- added `:root` below the resets
+  - this is to scope the variables to be used anywhere
+- added `--primary-color: #4891ff;`
+- modified `.navbar ul li a:hover` to use the variable for the color | `color: var(--primary-color);`
+
+- added some aditional color variables (see css)
+
+
+
+
+
+
+
 
 
