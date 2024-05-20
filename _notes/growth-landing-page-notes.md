@@ -148,6 +148,45 @@ img {
 
 - added some aditional color variables (see css)
 
+# 7. Button utility classes 
+- added button utility class styling
+``` CSS
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 0.8s;
+}
+
+.btn-light{
+  background: var(--light-color);
+}
+
+.btn-primary{
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+```
 
 
 
