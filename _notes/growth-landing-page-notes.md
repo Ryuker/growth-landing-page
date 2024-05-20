@@ -188,6 +188,18 @@ img {
 }
 ```
 
+# 8. Navbar changes
+- added styling to give the login button a bit more space and space the icon a bit further
+``` CSS
+.navbar ul li:last-child a {
+  margin-left: 10px;
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+```
+
 
 
 
