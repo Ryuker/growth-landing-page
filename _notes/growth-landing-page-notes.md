@@ -315,6 +315,23 @@ img {
 </section>
 ```
 
+## Video Section Styling
+``` CSS
+/* Video */
+.video {
+  padding: 10px 0 40px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+```
+
+# 13. Background Utility Classes
+
+
 
 
 
