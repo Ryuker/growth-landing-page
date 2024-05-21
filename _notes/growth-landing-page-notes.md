@@ -349,6 +349,7 @@ img {
 
 .bg-black {
   background: #000;
+  color: #fff;
 }
 ```
 
