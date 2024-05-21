@@ -438,8 +438,15 @@ img {
 ```
 - modified `.btn` to use `text-align: center`
 
-# 16. FAQ HTML
+# 16. FAQ 
+## HTML
+- added FAQ Section HTML elements
+  - Added a few divs using a group class
+  - we'll use javascript to open and close these divs
 
+## CSS
+
+## JavaScript
 
 
 
