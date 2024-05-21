@@ -438,6 +438,9 @@ img {
 ```
 - modified `.btn` to use `text-align: center`
 
+# 16. FAQ HTML
+
+
 
 
 
