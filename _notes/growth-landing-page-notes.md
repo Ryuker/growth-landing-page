@@ -330,6 +330,27 @@ img {
 ```
 
 # 13. Background Utility Classes
+- Added background utility classes
+``` CSS
+/* Background */
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+}
+
+.bg-black {
+  background: #000;
+}
+```
 
 
 
