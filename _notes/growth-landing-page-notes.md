@@ -345,6 +345,7 @@ img {
 
 .bg-dark {
   background: var(--dark-color);
+  color: #fff;
 }
 
 .bg-black {
@@ -352,6 +353,50 @@ img {
   color: #fff;
 }
 ```
+
+# 14. Testimonials Section
+- Added testimationals section element
+- Added card element and duplicated it several times
+
+## Card Utility Styling
+- Added card utility styling
+``` CSS
+/* Card */
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+}
+```
+
+## Testimonials Styling
+- Added testimonials styling
+  - using grid for spacing the cards
+``` CSS
+/* Testimonials */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
+```
+
+
 
 
 
