@@ -557,6 +557,11 @@ faqContainer.addEventListener('click', (e) => {
 });
 ```
 
+# 17. Footer 
+## HTML
+
+## Styling
+
 
 
 
