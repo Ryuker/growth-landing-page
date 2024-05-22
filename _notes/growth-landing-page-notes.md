@@ -515,6 +515,47 @@ img {
 ```
 
 ## JavaScript
+- Added FAQ Accordion functionality
+  - because we set defer on the script import in index.html we don't need to run this in a callback of DOMContentLoaded
+  - we basically attach a listener to .faq-content
+    - this way clicking on any of it's elements will delegate the event to the top element
+    - we then isolate which kind of element we're clicking and toggle the icon appearance and group-body visibility
+    - when we toggle visibility of one group-body we hide the visibility of the other group-bodies.
+      - this is optional. We can disable this if we want multiple accordions to remain open
+    - the icon appearance is also toggled.
+``` JS main.js
+// FAQ Accordion
+const faqContainer = document.querySelector('.faq-content');
+faqContainer.addEventListener('click', (e) => {
+  const groupHeader = e.target.closest('.faq-group-header');
+  
+  if (!groupHeader) return;
+
+  const group = groupHeader.parentElement;
+  const groupBody = group.querySelector('.faq-group-body');
+  const icon = groupHeader.querySelector('i');
+
+  // Toggle Icon
+  icon.classList.toggle('fa-plus');
+  icon.classList.toggle('fa-minus');
+
+  // Toggle visibility of body
+  groupBody.classList.toggle('open');
+
+  // Close other open FAQ bodies
+  const otherGroups = faqContainer.querySelectorAll('.faq-group');
+  otherGroups.forEach(otherGroup => {
+    if (otherGroup !== group) {
+      const otherGroupBody = otherGroup.querySelector('.faq-group-body');
+      const otherIcon = otherGroup.querySelector('.faq-group-header i');
+
+      otherGroupBody.classList.remove('open');
+      otherIcon.classList.remove('fa-minus');
+      otherIcon.classList.add('fa-plus');
+    }
+  });
+});
+```
 
 
 
