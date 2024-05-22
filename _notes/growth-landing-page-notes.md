@@ -776,6 +776,38 @@ hamburgerBtn.addEventListener('click', () => mobileMenu.classList.toggle('active
 ```
 
 
+# 19. Further Responsive Changes: Hero 
+- lowered font size at 960px max-width
+``` CSS
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
+```
+
+-  other changed for 670px max-width
+``` CSS
+.hero .container {
+  background: url('../assets/images/hero-bg-mobile.png') no-repeat;
+  background-size: 350px 400px;
+  background-position: bottom;
+  height: 770px;
+}
+
+.hero .hero-content, 
+.hero .hero-text {
+  width: 100%;
+  text-align: center;
+}
+
+.hero .hero-buttons .btn {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+```
+
 
 
 
