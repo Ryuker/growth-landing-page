@@ -16,6 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -468,6 +469,26 @@ img {
     margin-bottom: 10px;
     display: block;
     width: 100%;
+  }
+
+  /* Testimonials */
+  .testimonials .testimonials-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
   }
 
 

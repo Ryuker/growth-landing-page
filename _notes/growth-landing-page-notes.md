@@ -821,6 +821,31 @@ hamburgerBtn.addEventListener('click', () => mobileMenu.classList.toggle('active
 }
 ```
 
+- disabled horizontal scrolling on the body | `overflow-x: hidden;` (not a responsive change)
+
+- added testimonials and grid responsive styling
+``` CSS
+/* Testimonials */
+.testimonials .testimonials-heading {
+  max-width: 100%;
+  text-align: center;
+}
+
+.testimonials .testimonials-grid,
+.pricing .pricing-grid,
+.footer .footer-grid {
+  grid-template-columns: 1fr;
+}
+
+.footer .card {
+  margin-right: 0;
+}
+
+.footer .footer-grid > div {
+  text-align: center;
+}
+```
+
 
 
 
