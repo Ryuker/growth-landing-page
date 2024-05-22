@@ -450,6 +450,7 @@ img {
     display: block;
   }
 
+  /* Hero */
   .hero .container {
     background: url('../assets/images/hero-bg-mobile.png') no-repeat;
     background-size: 350px 400px;
@@ -467,6 +468,20 @@ img {
     margin-bottom: 10px;
     display: block;
     width: 100%;
+  }
+
+
+  /*  Text */
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
   }
 }
 

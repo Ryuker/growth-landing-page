@@ -806,7 +806,22 @@ hamburgerBtn.addEventListener('click', () => mobileMenu.classList.toggle('active
   display: block;
   width: 100%;
 }
+
+/*  Text */
+.text-xl {
+  font-size: 1.9rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-md {
+  font-size: 1.1rem;
+}
 ```
+
+
 
 
 
