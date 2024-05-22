@@ -661,7 +661,7 @@ faqContainer.addEventListener('click', (e) => {
 - Added Mobile Menu elements
 ``` HTML
 <!-- Hamburger Button -->
-<button id="hamburger-button" class="hamburger-button">
+<button class="hamburger-button">
   <div class="hamburger-line"></div>
   <div class="hamburger-line"></div>
   <div class="hamburger-line"></div>
@@ -763,6 +763,16 @@ faqContainer.addEventListener('click', (e) => {
   font-size: 20px;
   transition: 0.3s;
 }
+```
+
+## JS
+- added mobile menu toggle functionality
+``` JS
+// Mobile Menu Display Toggle
+const hamburgerBtn = document.querySelector('.hamburger-button');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+hamburgerBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
 ```
 
 
