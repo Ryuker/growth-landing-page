@@ -655,6 +655,41 @@ faqContainer.addEventListener('click', (e) => {
 }
 ```
 
+# 18. Responsive Changes: Navbar Hamburger Menu
+## HTML
+- Added Hamburger Button elements
+- Added Mobile Menu elements
+``` HTML
+<!-- Hamburger Button -->
+<button id="hamburger-button" class="hamburger-button">
+  <div class="hamburger-line"></div>
+  <div class="hamburger-line"></div>
+  <div class="hamburger-line"></div>
+</button>
+
+<div class="mobile-menu">
+  <ul>
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="#">About Us</a>
+    </li>
+    <li>
+      <a href="#">Blog</a>
+    </li>
+    <li>
+      <a class="btn btn-light" href="#">
+        <i class="fas fa-user"></i>Login</a>
+    </li>
+  </ul>
+</div>
+```
+
+## CSS
+
+
+
 
 
 
