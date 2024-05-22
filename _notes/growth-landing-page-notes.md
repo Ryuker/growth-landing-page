@@ -579,37 +579,81 @@ faqContainer.addEventListener('click', (e) => {
             <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
           </form>
         </div>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter"></i>
       </div>
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-twitter"></i>
-    </div>
-    <div>
-      <div class="h4">Company</div>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Process</a></li>
-        <li><a href="#">Join Our Team</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Recent Projects</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="#">hello@growthapp.com</a></li>
-      </ul>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Process</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Recent Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">hello@growthapp.com</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
 ```
 
 ## Styling
+- Added footer styling
+``` CSS
+/* Footer */
+.footer {
+  padding: 40px 0;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul li {
+  line-height: 2.5;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 20px 30px 30px 0;
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+```
 
 
 
