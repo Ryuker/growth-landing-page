@@ -29,3 +29,5 @@ faqContainer.addEventListener('click', (e) => {
     }
   });
 });
+
+// Mobile Menu Display Toggle
