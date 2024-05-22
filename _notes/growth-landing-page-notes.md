@@ -445,6 +445,74 @@ img {
   - we'll use javascript to open and close these divs
 
 ## CSS
+- added FAQ styling classes
+  - the `faq-group-header` has `position: relative` so we can absolute position the icon
+  - `faq-group-body` is set to `display: none` by default.
+    - we'll add a open class to this using JavaScript
+``` CSS
+.faq {
+  padding: 40px 0;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq .faq-group .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq .faq-group .faq-group-header i {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 1.3rem;
+  cursor: pointer;
+} 
+
+.faq .faq-group .faq-group-body {
+  display: none;
+}
+
+.faq .faq-group .faq-group-body.open {
+  display: block;
+}
+```
+
+**FAQ Menu Styling**
+``` CSS
+.faq ul.faq-menu {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq ul.faq-menu li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--primary-color);
+  color: #fff;
+}
+```
 
 ## JavaScript
 
